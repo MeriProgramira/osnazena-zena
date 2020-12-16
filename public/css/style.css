@@ -4,6 +4,10 @@ body {
     box-sizing: border-box;
 }
 
+.text-primary {
+    color: #f76fd5 !important;
+}
+
 .social-media {
     float: right;
     margin-bottom: 0px;
@@ -53,6 +57,8 @@ a:hover {
     -o-transition: 0.3 all ease;
     transition: 0.3s all ease;
     transition: 0.3s all ease;
+    z-index: 1000;
+    margin-bottom: 10px;
 }
 .sticky img {
     height: 55px;
@@ -80,7 +86,72 @@ a:hover {
     justify-content: center;
 }
 
-footer h4, #copyrights p {
+.section {
+    padding: 177px 0 80px 0;
+}
+
+.section h1{
+    padding-bottom: 2%;
+}
+
+#about-us p{
+    line-height: 1.8;
+}
+
+#about-text {
+    line-height: 1.9;
+    font-size: 1.2em;
+}
+
+.card {
+    border:none;
+}
+
+.card-text {
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.ul-check li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.ul-check li:before {
+    left: 0;
+    font-size: 20px;
+    top: -0.3rem;
+    font-family: "icomoon";
+    content: "\e5ca";
+    position: absolute;
+}
+
+.ul-check.primary li:before {
+    color: #f196ea;
+}
+
+.empower {
+    background-image: url(../images/empower_women.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    height: calc(83vh);
+}
+
+.empower-title {
+    font-size: 60px;
+    color: #d3cdd3;
+    padding-bottom: 30px;
+}
+
+.empower-text {
+    font-size: 36px;
+    color: #f5edf5;
+}
+
+footer h4 {
     color: #b5aeb5;
 }
 
@@ -105,4 +176,10 @@ footer h4, #copyrights p {
     footer {
         text-align: center;
     }
+
+    #about-us {
+        padding: 7% 8%;
+    }
 }
+
+

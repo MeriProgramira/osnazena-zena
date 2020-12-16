@@ -22,7 +22,7 @@
     </div>
 </div>
 
-<nav class="navbar navbar-expand-lg navbar-light " id="main-nav">
+<nav class="navbar navbar-expand-lg navbar-light border-bottom " id="main-nav">
     <div class="container">
         <a class="navbar-brand" href="#"><img src="images/logo21.png" alt="logo" height="75"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -35,10 +35,10 @@
                     <a class="nav-link active " aria-current="page" href="#">Početna</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  " href="#">O nama</a>
+                    <a class="nav-link  " href="#about-us">O nama</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  " href="#">Misija</a>
+                    <a class="nav-link  " href="#mission">Misija</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="#">Projekti</a>
@@ -58,7 +58,10 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Kontakt</a>
+                    <a class="nav-link " href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#contact">Kontakt</a>
                 </li>
 
             </ul>

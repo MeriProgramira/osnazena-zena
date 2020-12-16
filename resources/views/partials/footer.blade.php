@@ -1,4 +1,4 @@
-<footer class="site-footer pt-5 bg-dark text-white">
+<footer class="site-footer pt-5 bg-dark text-white" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-md-5 px-4">
@@ -11,7 +11,7 @@
                 <h4 class="footer-heading mb-4 ">Linkovi</h4>
                 <ul class="list-unstyled">
                     <li class="py-2"><a href="#">Pocetna </a></li>
-                    <li class="py-2"><a href="#">O nama</a></li>
+                    <li class="py-2"><a href="#about-us">O nama</a></li>
                     <li class="py-2"><a href="#">Projekti</a></li>
                     <li class="py-2"><a href="#">Blog</a></li>
                 </ul>
