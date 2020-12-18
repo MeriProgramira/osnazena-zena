@@ -60,14 +60,9 @@
         <div class="collapse navbar-collapse text-center" id="navbarNav">
             <ul class="navbar-nav ">
                 <li class="nav-item">
-                    <a class="nav-link active " aria-current="page" href="#">Početna</a>
+                    <a class="nav-link active " aria-current="page" href="{{ route('home') }}">Početna</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link  " href="#about-us">O nama</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link  " href="#mission">Misija</a>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link " href="#">Projekti</a>
                 </li>
@@ -77,7 +72,7 @@
                         Inspiracija
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">One nas inspirišu</a></li>
+                        <li><a class="dropdown-item" href="{{ route('home') }}">One nas inspirišu</a></li>
                         <li><a class="dropdown-item" href="#">Citati </a></li>
                         <li>
                             <hr class="dropdown-divider">
