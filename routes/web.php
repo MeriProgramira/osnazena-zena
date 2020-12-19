@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\CommentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,10 +30,18 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // Post routes
 Route::get('/posts', [App\Http\Controllers\PostController::class, 'index'])->name('posts');
+
 Route::get('/create-post', [PostController::class, 'create'])->name('create-post')->middleware('auth');
 Route::post('/create-post', [PostController::class, 'store']);
 Route::delete('/delete-post/{post}', [PostController::class, 'destroy'])->name('delete-post');
 Route::get('/update-post/{post}', [PostController::class, 'edit'])->name('update-post')->middleware('auth');
 Route::put('/update-post/{post}', [PostController::class, 'updatePost'])->name('update-post')->middleware('auth');
 
-Route::get('/blog', [PostController::class, 'indexBlog'])->name('blog');
+Route::get('/all-posts', [PostController::class, 'indexDashboard'])->name('all-posts')->middleware('auth');
+Route::get('/{post}', [PostController::class, 'indexBlog'])->name('blog');
+
+// Comments routes
+Route::get('/comments', [CommentController::class, 'index'])->name('comments');
+Route::post('/create-comment', [CommentController::class, 'store'])->name('create-comment')->middleware('auth');
+Route::post('/update-comment/{comment}', [CommentController::class, 'update'])->name('update-comment')->middleware('auth');
+Route::delete('/delete-comment/{comment}', [CommentController::class, 'destroy'])->name('delete-comment')->middleware('auth');

@@ -4,23 +4,39 @@
     <div class="container  mt-5 ">
 
         @if ($posts->count())
+        <div class="row d-flex">
 
             @foreach ($posts as $post)
-                <div class="container post">
-                    <h3 class="text-uppercase p-3">{{ $post->title }}</h3>
-                    <h6 class="px-4">{{ $post->user->user_name }},   <span>{{ $post->created_at->diffForHumans() }}</span></h6>
-                    <div class="row p-4">
+                @if($loop->first)
 
-                            <img src="{{ $post->image }}" alt="food image" >
+                  <div class="card bg-dark text-white ">
+                    <img src="{{ $post->image }}" class="card-img" id="main-img" alt="post image">
+                    <div class="card-img-overlay ">
+                      <h5 class="card-title">{{ $post->title }}</h5>
+                      <h6 class="px-3 ">{{ $post->user->user_name }},   <span>{{ $post->created_at->diffForHumans() }}</span></h6>
+                      <p class="card-text">{!! Str::words($post->content, $limit = 23, $end = '...')   !!}</p>
+                      <p class="card-text"><a href="{{ route('blog', $post) }}">pročitaj više</a></p>
+                    </div>
+                  </div>
 
-                        <div class="row py-5 px-3 mx-4">
-                            <p>{!! $post->content !!}</p>
+                @else
+
+                    <div class="col-sm-3">
+                        <div class="card my-5 second-blog" >
+                            <img src="{{ $post->image }}" class="card-img-top img-fluid" alt="post image">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $post->title }}</h5>
+                                <p class="card-text">{!! Str::words($post->content, $limit = 23, $end = '...')   !!}</p>
+                                <p class="card-text"><a href="{{ route('blog', $post) }}">pročitaj više</a></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <hr>
-            @endforeach
 
+                @endif
+
+
+            @endforeach
+        </div>
         @else
             <p>Nemate nijedan post!</p>
         @endif
@@ -33,12 +49,38 @@
 
     <style>
         h6 {
-            color: rgb(138, 138, 139);
+            color: rgb(219, 219, 224);
             font-style: italic;
         }
-        .post img {
+        img {
             max-width: 100%;
         }
+
+        #main-img {
+            opacity: 0.35;
+        }
+
+        .card-img-overlay {
+            padding: 5% 7%;
+        }
+
+        .card {
+            border:1px solid rgb(190, 189, 194) ;
+        }
+
+        .second-blog {
+            font-size: 0.7rem;
+        }
+
+        @media (max-width: 560px) {
+            .card {
+                font-size: 0.8rem;
+            }
+        }
+
+
+
+
 
 
     </style>

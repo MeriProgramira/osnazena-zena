@@ -10,10 +10,10 @@
             <div class="col-md-4 px-4 text-center">
                 <h4 class="footer-heading mb-4 ">Linkovi</h4>
                 <ul class="list-unstyled">
-                    <li class="py-2"><a href="#">Pocetna </a></li>
+                    <li class="py-2"><a href="{{ route('home') }}">Pocetna </a></li>
                     <li class="py-2"><a href="#about-us">Projekti</a></li>
                     <li class="py-2"><a href="#">Inspiracija</a></li>
-                    <li class="py-2"><a href="{{ route('blog') }}">Blog</a></li>
+                    <li class="py-2"><a href="{{ route('posts') }}">Blog</a></li>
                 </ul>
             </div>
             <div class="col-md-3 px-4 ">

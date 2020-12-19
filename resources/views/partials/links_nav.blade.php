@@ -52,7 +52,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light border-bottom " id="main-nav">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="images/logo21.png" alt="logo" height="75"></a>
+        <a class="navbar-brand" href="{{ route('home') }}"><img src="images/logo21.png" alt="logo" height="75"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -81,7 +81,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="{{ route('blog') }}">Blog</a>
+                    <a class="nav-link " href="{{ route('posts') }}">Blog</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="#contact">Kontakt</a>

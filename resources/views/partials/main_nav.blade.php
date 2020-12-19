@@ -86,7 +86,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="{{ route('blog') }}">Blog</a>
+                    <a class="nav-link " href="{{ route('posts') }}">Blog</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="#contact">Kontakt</a>
