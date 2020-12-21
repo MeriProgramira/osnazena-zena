@@ -13,12 +13,6 @@ class CommentController extends Controller
         $this->middleware('auth');
     }
 
-    public function index()
-    {
-        $comments = Comment::orderBy('created_at','desc' )->take(9)->get();
-        return view('posts.show_post', compact('comments'));
-    }
-
 
     public function store(Request $request, Post $post)
     {

@@ -66,10 +66,10 @@
                     <a class="nav-link  " href="#about-us">O nama</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  " href="#mission">Misija</a>
+                    <a class="nav-link  " href="#">Novosti</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Projekti</a>
+                    <a class="nav-link " href="{{ route('projects') }}">Projekti</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -77,12 +77,12 @@
                         Inspiracija
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">One nas inspirišu</a></li>
-                        <li><a class="dropdown-item" href="#">Citati </a></li>
+                        <li><a class="dropdown-item" href="{{ route('inspire') }}">One nas inspirišu</a></li>
+                        <li><a class="dropdown-item" href="{{ route('quotes') }}">Citati </a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Korisni linkovi i dokumenti</a></li>
+                        <li><a class="dropdown-item" href="{{ route('useful-links') }}">Korisni linkovi i dokumenti</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">

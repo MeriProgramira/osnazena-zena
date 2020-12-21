@@ -31,7 +31,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+
                     <ul class="nav justify-content-center" id="links">
                         @if (auth()->user())
 
@@ -46,6 +46,35 @@
 
                 </div>
             </div>
+
+            <div class="card">
+                <div class="card-header">{{ __('Podaci o projektima') }}</div>
+
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+
+
+                    <ul class="nav justify-content-center" id="links">
+                        @if (auth()->user())
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('all-projects') }}">Svi projekti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('create-project') }}">Unesi novi projekat</a>
+                        </li>
+                        @endif
+                    </ul>
+
+                </div>
+            </div>
+
+
         </div>
     </div>
 </div>

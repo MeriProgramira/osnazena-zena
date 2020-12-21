@@ -4,24 +4,53 @@
 
 <p><a class=" m-3" href="{{ route('dashboard') }}"> <b>Povratak na Dashboard</b> </a></p>
     <div class="testbox">
-        <form action="{{ route('update-comment', $post) }}" method="POST" enctype="multipart/form-data">
-            @csrf
-            @method('PUT')
+      <form action="{{ route('create-project') }}" method="POST" enctype="multipart/form-data">
+        @csrf
         <div class="banner">
-          <h1>"Osnažena žena" - ažuriraj komentar</h1>
+          <h1>"Osnazena zena" - unesi projekat</h1>
         </div>
 
         <div class="item">
-          <label for="content">Komentar<span>*</span></label>
-          <input id="content" type="text" name="content" value="{{ $post->content }}" />
-          @error('content')
+          <label for="title">Naslov projekta<span>*</span></label>
+          <input id="title" type="text" name="title" value="" />
+          @error('title')
             <div class="alert text-danger py-1">{{ $message }}</div>
           @enderror
         </div>
 
 
+        <div class="item">
+            <label for="active">Status<span>*</span></label>
+            <select class="selectpicker" name="active" data-style="form-control btn-secondary">
+                <option value='1' >Aktivan</option>
+                <option value='0'>Pasivan</option>
+            </select>
+            @error('active')
+              <div class="alert text-danger py-1">{{ $message }}</div>
+            @enderror
+        </div>
+
+        <div class="item">
+          <label for="content">Sadrzaj projekta<span>*</span></label>
+          <textarea name="content" id="content" cols="30" rows="10"></textarea>
+
+          @error('content')
+            <div class="alert text-danger py-1">{{ $message }}</div>
+          @enderror
+        </div>
+
+        <div class="file-field">
+					<div class="btn btn-light btn-sm float-left">
+						<span>Odaberite sliku</span>
+                        <input type="file" name="image">
+                        @error('image')
+                            <div class="alert text-danger py-1">{{ $message }}</div>
+                        @enderror
+					</div>
+		</div>
+
         <div class="btn-block">
-          <button type="submit" >Sačuvaj komentar</button>
+          <button type="submit" >Sacuvaj projekat</button>
         </div>
       </form>
     </div>

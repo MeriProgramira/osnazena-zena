@@ -2,8 +2,10 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\ProjectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,10 +28,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+Route::get('/home', [HomeController::class, 'index'])->name('dashboard');
 
 // Post routes
-Route::get('/posts', [App\Http\Controllers\PostController::class, 'index'])->name('posts');
+Route::get('/posts', [PostController::class, 'index'])->name('posts');
 
 Route::get('/create-post', [PostController::class, 'create'])->name('create-post')->middleware('auth');
 Route::post('/create-post', [PostController::class, 'store']);
@@ -38,10 +40,34 @@ Route::get('/update-post/{post}', [PostController::class, 'edit'])->name('update
 Route::put('/update-post/{post}', [PostController::class, 'updatePost'])->name('update-post')->middleware('auth');
 
 Route::get('/all-posts', [PostController::class, 'indexDashboard'])->name('all-posts')->middleware('auth');
-Route::get('/{post}', [PostController::class, 'indexBlog'])->name('blog');
+Route::get('/posts/{post}', [PostController::class, 'indexBlog'])->name('blog');
+
+// Projects routes
+Route::get('/projects', [ProjectController::class, 'index'])->name('projects');
+
+Route::get('/create-project', [ProjectController::class, 'create'])->name('create-project')->middleware('auth');
+Route::post('/create-project', [ProjectController::class, 'store']);
+Route::delete('/delete-project/{project}', [ProjectController::class, 'destroy'])->name('delete-project');
+Route::get('/update-project/{project}', [ProjectController::class, 'edit'])->name('update-project')->middleware('auth');
+Route::put('/update-project/{project}', [ProjectController::class, 'updateProject'])->name('update-project')->middleware('auth');
+
+Route::get('/all-projects', [ProjectController::class, 'indexDashboard'])->name('all-projects')->middleware('auth');
+Route::get('/projects/{project}', [ProjectController::class, 'indexProject'])->name('project');
 
 // Comments routes
-Route::get('/comments', [CommentController::class, 'index'])->name('comments');
 Route::post('/create-comment', [CommentController::class, 'store'])->name('create-comment')->middleware('auth');
 Route::post('/update-comment/{comment}', [CommentController::class, 'update'])->name('update-comment')->middleware('auth');
 Route::delete('/delete-comment/{comment}', [CommentController::class, 'destroy'])->name('delete-comment')->middleware('auth');
+
+// Inspire section routes
+Route::get('/inspire', function () {
+    return view('girlthink');
+})->name('inspire');
+
+Route::get('/useful-links', function () {
+    return view('links');
+})->name('useful-links');
+
+Route::get('/quotes', function () {
+    return view('quotes');
+})->name('quotes');

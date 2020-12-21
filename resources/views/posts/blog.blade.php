@@ -4,11 +4,13 @@
     <div class="container  mt-5 ">
 
         @if ($posts->count())
-        <div class="row d-flex">
+        <div class="row ">
 
             @foreach ($posts as $post)
                 @if($loop->first)
 
+
+                    <div class="col-sm-12">
                   <div class="card bg-dark text-white ">
                     <img src="{{ $post->image }}" class="card-img" id="main-img" alt="post image">
                     <div class="card-img-overlay ">
@@ -18,6 +20,8 @@
                       <p class="card-text"><a href="{{ route('blog', $post) }}">pročitaj više</a></p>
                     </div>
                   </div>
+                </div>
+
 
                 @else
 

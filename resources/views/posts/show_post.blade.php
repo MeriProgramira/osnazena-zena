@@ -2,7 +2,7 @@
 @section('content')
 
     <div class="container  mt-5 ">
-
+            @if($post)
                 <div class="container post">
                     <h3 class="text-uppercase pb-3">{{ $post->title }}</h3>
                     <h6 class="px-3 text-black-50">{{ $post->user->user_name }},   <span>{{ $post->created_at->diffForHumans() }}</span></h6>
@@ -72,7 +72,9 @@
                     </div>
                 </div>
                 <hr>
-
+             @else
+              <p>Trazeni post ne postoji</p>
+             @endif
     </div>
 
 
