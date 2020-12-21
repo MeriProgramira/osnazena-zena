@@ -63,7 +63,7 @@
                     <a class="nav-link active " aria-current="page" href="{{ route('home') }}">Početna</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Novosti</a>
+                    <a class="nav-link " href="{{ route('news') }}">Novosti</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="{{ route('projects') }}">Projekti</a>

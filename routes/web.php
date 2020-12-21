@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ProjectController;
@@ -37,6 +38,12 @@ Route::group(['middleware' => ['adminRoutes']], function () {
     Route::get('/update-project/{project}', [ProjectController::class, 'edit'])->name('update-project')->middleware('auth');
     Route::put('/update-project/{project}', [ProjectController::class, 'updateProject'])->name('update-project')->middleware('auth');
 
+    Route::get('/create-news', [NewsController::class, 'create'])->name('create-news')->middleware('auth');
+    Route::post('/create-news', [NewsController::class, 'store']);
+    Route::delete('/delete-new/{new}', [NewsController::class, 'destroy'])->name('delete-new');
+    Route::get('/update-news/{new}', [NewsController::class, 'edit'])->name('update-news')->middleware('auth');
+    Route::put('/update-news/{news}', [NewsController::class, 'updateNews'])->name('update-news')->middleware('auth');
+
     Route::post('/update-comment/{comment}', [CommentController::class, 'update'])->name('update-comment')->middleware('auth');
     Route::delete('/delete-comment/{comment}', [CommentController::class, 'destroy'])->name('delete-comment')->middleware('auth');
 
@@ -60,6 +67,11 @@ Route::get('/posts/{post}', [PostController::class, 'indexBlog'])->name('blog');
 Route::get('/projects', [ProjectController::class, 'index'])->name('projects');
 Route::get('/all-projects', [ProjectController::class, 'indexDashboard'])->name('all-projects')->middleware('auth');
 Route::get('/projects/{project}', [ProjectController::class, 'indexProject'])->name('project');
+
+// News routes
+Route::get('/news', [NewsController::class, 'index'])->name('news');
+Route::get('/all-news', [NewsController::class, 'indexDashboard'])->name('all-news')->middleware('auth');
+Route::get('/news/{new}', [NewsController::class, 'indexNews'])->name('new');
 
 // Comments routes
 Route::post('/create-comment', [CommentController::class, 'store'])->name('create-comment')->middleware('auth');

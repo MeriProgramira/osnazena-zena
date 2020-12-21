@@ -46,7 +46,7 @@
             @endforeach
         </table>
         @else
-            <p>Nijedan post nije unesen!</p>
+            <p>Nijedan projekat nije unesen!</p>
         @endif
     @else
         <h3>Molimo da se logujete da bi imali pristup stranici</h3>
