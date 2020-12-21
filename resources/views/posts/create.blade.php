@@ -39,7 +39,7 @@
 
         <div class="item">
           <label for="content">Sadrzaj posta<span>*</span></label>
-          <textarea name="content" id="content" cols="30" rows="10"></textarea>
+          <textarea name="content" id="content" cols="30" rows="10">{{ old('content') }}</textarea>
 
           @error('content')
             <div class="alert text-danger py-1">{{ $message }}</div>

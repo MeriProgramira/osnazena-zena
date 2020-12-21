@@ -7,7 +7,13 @@
     @if (auth()->user())
     <p><a class=" m-3" href="{{ route('dashboard') }}"> <b>Povratak na Dashboard</b> </a></p>
 
-        <h3 class="text-uppercase">Svi postovi</h3>
+        <h3 class="text-uppercase">Svi postovi
+                @if(auth()->user()->role === 'admin')
+                    ({{ $posts->count() }})
+                @else
+                    ({{ auth()->user()->posts()->count() }})
+
+                @endif</h3>
         @if ($posts->count())
         <table class="table mt-3">
             @foreach ($posts as $post)

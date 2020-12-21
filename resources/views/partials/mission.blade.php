@@ -1,5 +1,5 @@
 <section class="section" id="mission">
-    <div class="container pn-3">
+    <div class="container ">
         <div class="row mb-2">
             <h1 class="">Naša misija</h1>
         </div>
@@ -47,3 +47,9 @@
     </div>
 
 </section>
+
+<style>
+    #mission {
+    padding: 30px 0 80px 0;
+}
+</style>

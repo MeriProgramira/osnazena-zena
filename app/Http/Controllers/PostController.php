@@ -10,13 +10,19 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::orderBy('created_at','desc' )->get();
-        return view('posts.index', compact('posts'));
+        return view('posts.blog', compact('posts'));
     }
 
-    public function indexBlog()
+    public function indexBlog($id)
     {
-        $posts = Post::orderBy('created_at','desc' )->take(3)->get();
-        return view('posts.blog', compact('posts'));
+        $post = Post::find($id);
+        return view('posts.show_post', compact('post'));
+    }
+
+    public function indexDashboard()
+    {
+        $posts = Post::orderBy('created_at','desc' )->get();
+        return view('posts.index', compact('posts'));
     }
 
     public function create()
@@ -32,7 +38,7 @@ class PostController extends Controller
             'content' => 'required',
             'keywords' => 'required|max:255',
             'active' => 'required',
-            'image' => 'mimes:jpg, jpeg, png|required'
+            'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
         ]);
         $path = $this->uploadImage($request);
 

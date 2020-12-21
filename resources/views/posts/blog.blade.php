@@ -4,23 +4,55 @@
     <div class="container  mt-5 ">
 
         @if ($posts->count())
+        <div class="row ">
 
             @foreach ($posts as $post)
-                <div class="container post">
-                    <h3 class="text-uppercase p-3">{{ $post->title }}</h3>
-                    <h6 class="px-4">{{ $post->user->user_name }},   <span>{{ $post->created_at->diffForHumans() }}</span></h6>
-                    <div class="row p-4">
+                @if($loop->first)
 
-                            <img src="{{ $post->image }}" alt="food image" >
 
-                        <div class="row py-5 px-3 mx-4">
-                            <p>{!! $post->content !!}</p>
+                    <div class="col-sm-12">
+                  <div class="card bg-dark text-white mb-3 ">
+                    <img src="{{ $post->image }}" class="card-img" id="main-img" alt="post image">
+                    <div class="card-img-overlay ">
+                      <h5 class="card-title">{{ $post->title }}</h5>
+                      <h6 class="px-3 ">{{ $post->user->user_name }},   <span>{{ $post->created_at->diffForHumans() }}</span></h6>
+                      <p class="card-text">{!! Str::words($post->content, $limit = 23, $end = '...')   !!}</p>
+                      <p class="card-text"><a href="{{ route('blog', $post) }}">pročitaj više</a></p>
+                    </div>
+                  </div>
+                </div>
+
+
+                @else
+
+                    <div class="col-lg-6 second-blog ">
+                        <div class="row ">
+                            <div class="col-lg-5">
+                                <img src="{{ $post->image }}" class="card-img-top img-fluid" alt="post image">
+                            </div>
+                            <div class="col-lg 7">
+                                <h6 class="card-title">{{ $post->title }}</h6>
+                                <p class="card-text">{!! Str::words($post->content, $limit = 19, $end = '...')   !!} <a href="{{ route('blog', $post) }}">pročitaj više</a></p>
+                            </div>
+                            <hr>
                         </div>
                     </div>
-                </div>
-                <hr>
-            @endforeach
 
+                        {{-- <div class="card second-blog "  style="width: 16rem;" >
+                            <img src="{{ $post->image }}" class="card-img-top img-fluid" alt="post image">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $post->title }}</h5>
+                                <p class="card-text">{!! Str::words($post->content, $limit = 23, $end = '...')   !!}</p>
+                                <p class="card-text"><a href="{{ route('blog', $post) }}">pročitaj više</a></p>
+                            </div>
+                        </div> --}}
+
+
+                @endif
+
+
+            @endforeach
+        </div>
         @else
             <p>Nemate nijedan post!</p>
         @endif
@@ -33,12 +65,44 @@
 
     <style>
         h6 {
-            color: rgb(138, 138, 139);
+            color: rgb(130, 130, 136);
             font-style: italic;
         }
-        .post img {
+        img {
             max-width: 100%;
         }
+
+        #main-img {
+            opacity: 0.35;
+        }
+
+        .card-img-overlay {
+            padding: 5% 7%;
+        }
+
+        .card {
+            border:1px solid rgb(190, 189, 194) ;
+        }
+
+        .second-blog {
+            font-size: 0.8rem;
+            margin: 14px 0;
+        }
+
+        a {
+            font-size: 14px;
+            margin-top: 7px;
+        }
+
+        @media (max-width: 560px) {
+            .card {
+                font-size: 0.8rem;
+            }
+        }
+
+
+
+
 
 
     </style>

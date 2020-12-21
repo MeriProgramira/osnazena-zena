@@ -31,12 +31,12 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+
                     <ul class="nav justify-content-center" id="links">
                         @if (auth()->user())
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('posts') }}">Svi postovi</a>
+                            <a class="nav-link" href="{{ route('all-posts') }}">Svi postovi</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('create-post') }}">Unesi novi post</a>
@@ -46,6 +46,7 @@
 
                 </div>
             </div>
+
         </div>
     </div>
 </div>
