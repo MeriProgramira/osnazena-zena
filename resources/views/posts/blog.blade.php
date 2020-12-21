@@ -31,7 +31,7 @@
                                 <img src="{{ $post->image }}" class="card-img-top img-fluid" alt="post image">
                             </div>
                             <div class="col-lg 7">
-                                <h6 class="card-title">{{ $post->title }}</h6>
+                                <h6 class="card-title" id="second-title">{{ $post->title }}</h6>
                                 <p class="card-text">{!! Str::words($post->content, $limit = 19, $end = '...')   !!} <a href="{{ route('blog', $post) }}">pročitaj više</a></p>
                             </div>
                             <hr>
@@ -97,6 +97,10 @@
         @media (max-width: 560px) {
             .card {
                 font-size: 0.8rem;
+            }
+
+            #second-title {
+                padding-top: 10px;
             }
         }
 

@@ -59,7 +59,7 @@
 
             <div class="row">
                 <div class="col-12">
-                    <p class="main-text">Unatoč prijetnjama kojima su ona i njena obitelj bile izložene, Malala se nastavila zalagati za obrazovanje djevojčica govoreći o tom gorućem pitanju
+                    <p class="main-text mb-5">Unatoč prijetnjama kojima su ona i njena obitelj bile izložene, Malala se nastavila zalagati za obrazovanje djevojčica govoreći o tom gorućem pitanju
                         u brojnim televizijskim intervjuima. Svoju je priču ispričala i u dva dokumentarca koji su ono što se događa u Pakistanu pokazali cijelom svjetu.
                         Njeno zalaganje u javnosti i otvoreno suprotstavljanje talibanskom režimu u kojem žene imaju podčinjenu ulogu, rezultiralo je pokušajem ubojstva dok
                         se autobusom vraćala kući iz škole u listopadu 2012. godine. Ubojica kojeg su angažirali talibani ušao je u autobus i ispalio metak izravno u Malalino lice,
@@ -68,9 +68,37 @@
                          koja je preživjela pokušaj ubojstva, napustila Pakistan, nastavila svoju borbu i 2014. dobila Nobelovu nagradu za mir.
 
                     </p>
+                    <hr>
                 </div>
-
             </div>
+
+    </div>
+
+    <div class="row ">
+        <div id="razija-title">
+            <h1 class="my-2 text-center">Razija Mujanović </h1>
+            <h5 class="mb-5 mt-3 text-center text-muted">Najbolja košarkašica i sportistkinja Bosne i Hercegovine svih vremena</h5>
+        </div>
+
+        <div class="col-md-12 text-center" data-aos="fade-up" >
+            <img src="{{ asset('images/razija.png') }}" alt="">
+        </div>
+        <div class="col-md-12 my-5" data-aos="fade-up" data-aos-delay="150">
+            <p class="main-text">Kada se spomene ženska košarka, većini poznavaoca igre pod obručima sa naših prostora prva asocijacija je legendarna
+                Razija “Raza” Mujanović. Raza je punih 27 godina profesionalne karijere harala pod obručima širom svijeta.
+                Sa 14 godina je došla iz rodnih Ratkovića u Tuzlu i tada je počela košarkaška bajka. <span> Grad soli i košarkaški klub “Jedinstvo Aida”,
+                 Raza je zadužila za sva vremena.</span> Igrala je paralelno za mlađe selekcije i za prvi tim Jednistva, koje je tih godina postalo prvoligaš.
+                 Posvećenost, rad i vjera u sebe. Bez te tri stvari nema uspjeha, bez obzira kojim se poslom bavite. Ja sam sanjala košarku, sanjala pobjede
+                  i nikad mi nije bila kafa sa drugaricama ispred treninga. Trenirala sam više od drugih. Trening sa ekipom završi, a ja ostanem da treniram
+                  individualno, trčim oko dvorane. A trener Miki me naučio da vjerujem u sebe. Na početku sam bila pomalo nesiguran, ali on me ubjedio da mogu
+                   biti najbolja na svijetu. Ponavljao mi je to na svakom treningu. Kada sam to prihvatila, došli su rezultati. Razija kaže: "Sada kada vratim film,
+                    tek vidim koliko je to veliko i teško dostižno. Dok sam aktivno igrala, sve mi je to bilo normalno, težila sam pobjedama, naporno radila i svi ti
+                    uspjesi su mi bili logičan slijed okolnosti. Naravno, jako sam ponosna na svoju karijeru i to što sam 3 puta proglašena za najbolju košarkašicu
+                    Starog kontinenta. <span> Posvećenost, rad i vjera u sebe. Bez te tri stvari nema uspjeha, bez obzira kojim se poslom bavite.</span> Ja sam sanjala košarku,
+                     sanjala pobjede i nikad mi nije bila kafa sa drugaricama ispred treninga. Trenirala sam više od drugih. Trening sa ekipom završi, a ja ostanem
+                     da treniram individualno, trčim oko dvorane. A trener Miki me naučio da vjerujem u sebe. Na početku sam bila pomalo nesiguran, ali on me ubjedio
+                     da mogu biti najbolja na svijetu. Ponavljao mi je to na svakom treningu. Kada sam to prihvatila, došli su rezultati. " </p>
+        </div>
     </div>
 
 
@@ -104,6 +132,10 @@
 
     .main-text {
         line-height: 1.9;
+    }
+
+    #razija-title {
+        width: 100%;
     }
 
     @media (max-width: 768px) {
