@@ -36,7 +36,7 @@ class ProjectController extends Controller
             'title' => 'required|max:255',
             'content' => 'required',
             'active' => 'required',
-            'image' => 'mimes:jpg, jpeg, png|required'
+            'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
         ]);
         $path = $this->uploadImage($request);
 

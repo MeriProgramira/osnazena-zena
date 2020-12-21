@@ -12,7 +12,7 @@
 
         <div class="item">
           <label for="title">Naslov projekta<span>*</span></label>
-          <input id="title" type="text" name="title" value="" />
+          <input id="title" type="text" name="title" value="{{ old('title') }}" />
           @error('title')
             <div class="alert text-danger py-1">{{ $message }}</div>
           @enderror
@@ -32,7 +32,7 @@
 
         <div class="item">
           <label for="content">Sadrzaj projekta<span>*</span></label>
-          <textarea name="content" id="content" cols="30" rows="10"></textarea>
+          <textarea name="content" id="content" cols="30" rows="10">{{ old('content') }}</textarea>
 
           @error('content')
             <div class="alert text-danger py-1">{{ $message }}</div>

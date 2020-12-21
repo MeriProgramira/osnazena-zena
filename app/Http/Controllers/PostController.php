@@ -38,7 +38,7 @@ class PostController extends Controller
             'content' => 'required',
             'keywords' => 'required|max:255',
             'active' => 'required',
-            'image' => 'mimes:jpg, jpeg, png|required'
+            'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
         ]);
         $path = $this->uploadImage($request);
 

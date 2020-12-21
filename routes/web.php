@@ -26,7 +26,21 @@ Route::get('/', function () {
     return view('index');
 })->name('home');
 
+
+// Authentication
 Auth::routes();
+Route::group(['middleware' => ['adminRoutes']], function () {
+    // only admin has rights to reach those routes
+    Route::get('/create-project', [ProjectController::class, 'create'])->name('create-project')->middleware('auth');
+    Route::post('/create-project', [ProjectController::class, 'store']);
+    Route::delete('/delete-project/{project}', [ProjectController::class, 'destroy'])->name('delete-project');
+    Route::get('/update-project/{project}', [ProjectController::class, 'edit'])->name('update-project')->middleware('auth');
+    Route::put('/update-project/{project}', [ProjectController::class, 'updateProject'])->name('update-project')->middleware('auth');
+
+    Route::post('/update-comment/{comment}', [CommentController::class, 'update'])->name('update-comment')->middleware('auth');
+    Route::delete('/delete-comment/{comment}', [CommentController::class, 'destroy'])->name('delete-comment')->middleware('auth');
+
+});
 
 Route::get('/home', [HomeController::class, 'index'])->name('dashboard');
 
@@ -44,20 +58,12 @@ Route::get('/posts/{post}', [PostController::class, 'indexBlog'])->name('blog');
 
 // Projects routes
 Route::get('/projects', [ProjectController::class, 'index'])->name('projects');
-
-Route::get('/create-project', [ProjectController::class, 'create'])->name('create-project')->middleware('auth');
-Route::post('/create-project', [ProjectController::class, 'store']);
-Route::delete('/delete-project/{project}', [ProjectController::class, 'destroy'])->name('delete-project');
-Route::get('/update-project/{project}', [ProjectController::class, 'edit'])->name('update-project')->middleware('auth');
-Route::put('/update-project/{project}', [ProjectController::class, 'updateProject'])->name('update-project')->middleware('auth');
-
 Route::get('/all-projects', [ProjectController::class, 'indexDashboard'])->name('all-projects')->middleware('auth');
 Route::get('/projects/{project}', [ProjectController::class, 'indexProject'])->name('project');
 
 // Comments routes
 Route::post('/create-comment', [CommentController::class, 'store'])->name('create-comment')->middleware('auth');
-Route::post('/update-comment/{comment}', [CommentController::class, 'update'])->name('update-comment')->middleware('auth');
-Route::delete('/delete-comment/{comment}', [CommentController::class, 'destroy'])->name('delete-comment')->middleware('auth');
+
 
 // Inspire section routes
 Route::get('/inspire', function () {

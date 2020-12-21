@@ -14,10 +14,11 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('You are logged in admin dashboard!') }}
                     <p> Ime korisnika: <span>{{ auth()->user()->user_name }}</span> </p>
                     <p> Datum kreiranja računa: <span> {{ \Carbon\Carbon::parse(auth()->user()->created_at)->format('d/m/Y')}} </span></p>
                     <p> Broj objavljenih postova: <span>{{ auth()->user()->posts()->count() }}</span></p>
+                    <p> Broj objavljenih projekata: <span>{{ auth()->user()->projects()->count() }}</span></p>
                 </div>
             </div>
 
@@ -46,6 +47,34 @@
 
                 </div>
             </div>
+
+            <div class="card">
+                <div class="card-header">{{ __('Podaci o projektima') }}</div>
+
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+
+
+                    <ul class="nav justify-content-center" id="links">
+                        @if (auth()->user())
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('all-projects') }}">Svi projekti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('create-project') }}">Unesi novi projekat</a>
+                        </li>
+                        @endif
+                    </ul>
+
+                </div>
+            </div>
+
 
         </div>
     </div>

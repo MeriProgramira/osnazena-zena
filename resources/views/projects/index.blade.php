@@ -7,7 +7,7 @@
     @if (auth()->user())
     <p><a class=" m-3" href="{{ route('dashboard') }}"> <b>Povratak na Dashboard</b> </a></p>
 
-        <h3 class="text-uppercase">Svi projekti</h3>
+        <h3 class="text-uppercase">Svi projekti  ({{ $projects->count() }}) </h3>
         @if ($projects->count())
         <table class="table mt-3">
             @foreach ($projects as $project)
@@ -39,7 +39,7 @@
                     <tr>
 
                         <td>{{ $project->title }}</td>
-                        <td>{!! Str::words($project->content, $limit = 10, $end = '...')   !!}</td>
+                        <td>{!! Str::words($project->content, $limit = 7, $end = '...')   !!}</td>
                         <td><img src="{{ $project->image }}" alt="project_image" width="100"></td>
                     </tr>
 @endif

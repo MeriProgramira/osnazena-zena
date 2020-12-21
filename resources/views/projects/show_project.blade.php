@@ -33,6 +33,7 @@
         }
         .post img {
             max-width: 100%;
+            border-radius: 3px;
         }
 
 
