@@ -32,7 +32,7 @@
                             </div>
                             <div class="col-lg 7">
                                 <h6 class="card-title" id="second-title">{{ $post->title }}</h6>
-                                <p class="card-text">{!! Str::words($post->content, $limit = 19, $end = '...')   !!} <a href="{{ route('blog', $post) }}" class="read-more">pročitaj više</a></p>
+                                <p class="card-text ">{!! Str::words($post->content, $limit = 19, $end = '...')   !!} <a href="{{ route('blog', $post) }}" class="read-more">pročitaj više</a></p>
                             </div>
                             <hr>
                         </div>
@@ -65,7 +65,6 @@
 
     <style>
         h6 {
-            color: rgb(130, 130, 136);
             font-style: italic;
         }
         img {
@@ -89,13 +88,18 @@
             margin: 14px 0;
         }
 
+        .second-blog p{
+            color: grey;
+            font-size: 16px;
+        }
+
         .read-more {
             font-size: 14px;
             margin-top: 7px;
         }
 
         @media (max-width: 560px) {
-            .card {
+            .card{
                 font-size: 0.8rem;
             }
 

@@ -30,7 +30,7 @@
                         <div class="text-news-second px-2">
                             <p class="card-category-second">{{ $new->category }}</p>
                             <h5 class="card-title">{{ $new->title }}</h5>
-                            <p class="card-text">{!! Str::words($new->content, $limit = 15, $end = '...')   !!}<a href="{{ route('new', $new) }}">pročitaj više</a></p>
+                            <p class="">{!! Str::words($new->content, $limit = 15, $end = '...')   !!}<a href="{{ route('new', $new) }}">pročitaj više</a></p>
                         </div>
 
                     </div>
