@@ -10,10 +10,12 @@
             </div>
             <div class="col-md-6 col-sm-12">
                 <ul class="social-media">
-                    <li><a href="#" class="p-2"><span class="icon-facebook"></span></a></li>
-                    <li><a href="#" class="p-2"><span class="icon-twitter"></span></a></li>
-                    <li><a href="#" class="p-2"><span class="icon-instagram"></span></a></li>
-                    <li><a href="#" class="p-2"><span class="icon-linkedin"></span></a></li>
+                    <li class=""><a href="#" class="p-2 "  id="icon-hide1"><span class="icon-facebook "></span></a></li>
+                    <li><a href="#" class="p-2 " id="icon-hide2"><span class="icon-twitter "></span></a></li>
+                    <li><a href="#" class="p-2"  id="icon-hide3"><span class="icon-instagram "></span></a></li>
+                    <li><a href="#" class="p-2"  id="icon-hide4"><span class="icon-linkedin "></span></a></li>
+
+
                     @guest
                                 @if (Route::has('login'))
                                     <li class="">
@@ -44,6 +46,7 @@
                                   </li>
 
                     @endguest
+
                 </ul>
             </div>
         </div>
@@ -91,8 +94,8 @@
                 <li class="nav-item">
                     <a class="nav-link " href="#contact">Kontakt</a>
                 </li>
-
             </ul>
+
         </div>
     </div>
 </nav>

@@ -98,6 +98,7 @@
                      sanjala pobjede i nikad mi nije bila kafa sa drugaricama ispred treninga. Trenirala sam više od drugih. Trening sa ekipom završi, a ja ostanem
                      da treniram individualno, trčim oko dvorane. A trener Miki me naučio da vjerujem u sebe. Na početku sam bila pomalo nesiguran, ali on me ubjedio
                      da mogu biti najbolja na svijetu. Ponavljao mi je to na svakom treningu. Kada sam to prihvatila, došli su rezultati. " </p>
+                     <small>(preuzeto sa linka https://nezavisniblok.ba/razija-mujanovic-za-face-politika-gluha-iako-zna-da-je-sport-najbolji-ambasador-jedne-zemlje-u-svijetu/)</small>
         </div>
     </div>
 
@@ -136,6 +137,10 @@
 
     #razija-title {
         width: 100%;
+    }
+
+    small {
+        color: #bcbbbd;
     }
 
     @media (max-width: 768px) {

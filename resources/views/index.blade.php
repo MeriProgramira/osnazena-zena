@@ -18,7 +18,11 @@
 
 </div>
 
+@include('partials.cookie_modal')
+
 
 
 
 @endsection
+
+

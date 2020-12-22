@@ -19,6 +19,7 @@
                     <p> Datum kreiranja računa: <span> {{ \Carbon\Carbon::parse(auth()->user()->created_at)->format('d/m/Y')}} </span></p>
                     <p> Broj objavljenih postova: <span>{{ auth()->user()->posts()->count() }}</span></p>
                     <p> Broj objavljenih projekata: <span>{{ auth()->user()->projects()->count() }}</span></p>
+                    <p> Broj objavljenih vijesti: <span>{{ auth()->user()->news()->count() }}</span></p>
                 </div>
             </div>
 
