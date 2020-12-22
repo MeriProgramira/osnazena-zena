@@ -90,8 +90,12 @@
     <script>
         tinymce.init({
           selector: 'textarea',
-          plugins: [ "advlist autolink lists link image charmap print preview anchor", "searchreplace visualblocks code fullscreen", "insertdatetime media table contextmenu paste hr" ],
-        toolbar: "insertfile undo redo | formatselect | bold italic underline | alignleft aligncenter alignright alignjustify | blockquote hr | bullist numlist outdent indent | link image"
+          plugins: [ "advlist autolink lists link image charmap print preview anchor insert", "searchreplace visualblocks code fullscreen",
+          "insertdatetime media table contextmenu paste hr" ],
+        toolbar: "insertfile undo redo | formatselect | bold italic underline | alignleft aligncenter alignright alignjustify | blockquote hr | bullist numlist outdent indent | link image",
+        images_upload_url: 'postAcceptor.php',
+         automatic_uploads: false
+
         });
 </script>
 </body>
