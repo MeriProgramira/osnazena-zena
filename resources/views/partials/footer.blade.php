@@ -35,7 +35,7 @@
             <div class="border-top pt-5 text-muted">
                 <p id="copyrights">
                     Copyright &copy 2020 All rights reserved | Made <i class="icon-heart " aria-hidden="true"></i>
-                    by GorgeousITGirls
+                    by <a href="">GorgeousITGirls</a>
                 </p>
             </div>
         </div>

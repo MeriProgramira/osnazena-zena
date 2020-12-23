@@ -159,7 +159,7 @@ footer h4 {
     color: #f76fd5;
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .social-media {
         margin-right: 20px;
         float: none;
@@ -167,6 +167,7 @@ footer h4 {
 
     #home-section {
         text-align: center;
+
     }
 
     .site-blocks-cover {
@@ -180,6 +181,16 @@ footer h4 {
     #about-us {
         padding: 7% 8%;
     }
+
+    #icon-hide1,#icon-hide2,#icon-hide3,#icon-hide4 {
+        display: none;
+    }
+
+
+
+
+
+
 }
 
 
