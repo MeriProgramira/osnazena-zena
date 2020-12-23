@@ -39,7 +39,7 @@ class ProjectSeeder extends Seeder
 
                 Edukacija će se odvijati u dva dana,  17. i 18. prosinca, od 10 do 12 sati putem Zoom aplikacije.' ,
                 'image' => '/uploads/news1.jpg' ,
-                'user_id' => 3,
+                'user_id' => 1,
                 'created_at' => now(),
             ],
 
@@ -52,7 +52,7 @@ class ProjectSeeder extends Seeder
                 digitalni marketing, a plan je da se u narednih šest mjeseci razvija u smjeru IT industrije i administrativnih poslova. Nahlin tim
                 koji radi na platformi Beecreative aktivno prati situaciju na tržištu rada, pa će se platforma dograđivati na način da adekvatno odgovori zahtjevima tržišta.' ,
                 'image' => '/uploads/news2.jpg' ,
-                'user_id' => 3,
+                'user_id' => 1,
                 'created_at' => now(),
             ],
 
@@ -66,7 +66,7 @@ class ProjectSeeder extends Seeder
                     učili online preporučujemo mentorstvo u početnoj fazi učenja zbog određivanja toka učenja, usmjeravanja i pomoći kod prevazilaženja izazova koji se javljaju
                      u praktičnoj primjeni naučenog. ' ,
                 'image' => '/uploads/news3.jpg' ,
-                'user_id' => 3,
+                'user_id' => 1,
                 'created_at' => now(),
             ],
 
@@ -76,7 +76,7 @@ class ProjectSeeder extends Seeder
                 'content' => 'U cilju ublažavanja teškoća nastalih pojavom koronavirusa i u skladu s preporukama o reduciranju kretanja i izlazaka iz svojih domova,
                  omogućili smo besplatnu psihološku pomoć i podršku našim sugrađanima i sugrađankama putem telefona. Na raspolaganju su naše psihologinje u Sarajevu i Bihaću. ' ,
                 'image' => '/uploads/news4.jpg' ,
-                'user_id' => 3,
+                'user_id' => 1,
                 'created_at' => now(),
             ],
 

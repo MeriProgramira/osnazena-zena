@@ -11,13 +11,13 @@
 
 
                     <div class="col-sm-12">
-                  <div class="card bg-dark text-white mb-3 ">
+                  <div class="card bg-dark text-white mb-3 " style="min-height: 25vh">
                     <img src="{{ $post->image }}" class="card-img" id="main-img" alt="post image">
                     <div class="card-img-overlay ">
                       <h5 class="card-title">{{ $post->title }}</h5>
                       <h6 class="px-3 ">{{ $post->user->user_name }},   <span>{{ $post->created_at->diffForHumans() }}</span></h6>
                       <p class="card-text">{!! Str::words($post->content, $limit = 23, $end = '...')   !!}</p>
-                      <p class="card-text"><a href="{{ route('blog', $post) }}">pročitaj više</a></p>
+                      <p class="card-text"><a href="{{ route('blog', $post) }}" class="read-more">pročitaj više</a></p>
                     </div>
                   </div>
                 </div>
@@ -31,8 +31,8 @@
                                 <img src="{{ $post->image }}" class="card-img-top img-fluid" alt="post image">
                             </div>
                             <div class="col-lg 7">
-                                <h6 class="card-title">{{ $post->title }}</h6>
-                                <p class="card-text">{!! Str::words($post->content, $limit = 19, $end = '...')   !!} <a href="{{ route('blog', $post) }}">pročitaj više</a></p>
+                                <h6 class="card-title" id="second-title">{{ $post->title }}</h6>
+                                <p class="card-text ">{!! Str::words($post->content, $limit = 19, $end = '...')   !!} <a href="{{ route('blog', $post) }}" class="read-more">pročitaj više</a></p>
                             </div>
                             <hr>
                         </div>
@@ -65,7 +65,6 @@
 
     <style>
         h6 {
-            color: rgb(130, 130, 136);
             font-style: italic;
         }
         img {
@@ -89,14 +88,23 @@
             margin: 14px 0;
         }
 
-        a {
+        .second-blog p{
+            color: grey;
+            font-size: 16px;
+        }
+
+        .read-more {
             font-size: 14px;
             margin-top: 7px;
         }
 
         @media (max-width: 560px) {
-            .card {
+            .card{
                 font-size: 0.8rem;
+            }
+
+            #second-title {
+                padding-top: 10px;
             }
         }
 
