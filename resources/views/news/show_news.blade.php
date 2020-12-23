@@ -12,7 +12,7 @@
                             <img src="{{ $new->image }}" alt="food image" >
                         </div>
 
-                        <div class="row py-3  ">
+                        <div class="row py-3 news-content" >
                             <p>{!! $new->content !!}</p>
                         </div>
                     </div>
@@ -35,6 +35,14 @@
         .post img {
             max-width: 100%;
             border-radius: 3px;
+        }
+
+        .news-content p{
+            width: 100%;
+        }
+
+        .news-content img{
+            text-align: center;
         }
 
 

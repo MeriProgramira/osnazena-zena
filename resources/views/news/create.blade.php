@@ -172,7 +172,7 @@
 
       @media (max-width: 900px) {
         .testbox{
-          width:60%;
+          width:85%;
       }
       }
 

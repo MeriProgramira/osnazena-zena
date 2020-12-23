@@ -46,7 +46,6 @@
         @endif
     </div>
 
-
 @endsection
 
 @section('style')
@@ -99,8 +98,6 @@
             background-color:#efedf2;
         }
 
-
-
         @media (max-width: 560px) {
             .text-news {
             position: absolute;
@@ -108,16 +105,8 @@
             left: 5%;
             font-size: 14px;
         }
-
         }
 
-
-
-
-
-
     </style>
-
-
 @endsection
 

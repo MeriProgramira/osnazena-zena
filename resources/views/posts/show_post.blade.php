@@ -11,7 +11,7 @@
                             <img src="{{ $post->image }}" alt="food image" >
                         </div>
 
-                        <div class="row py-3  ">
+                        <div class="row py-3 post-content ">
                             <p>{!! $post->content !!}</p>
                         </div>
                     </div>
@@ -95,6 +95,14 @@
             font-size: 0.9rem;
             border: 0.7px solid rgb(201, 200, 207);
             border-radius: 7px;
+        }
+
+        .post-content p{
+            width: 100%;
+        }
+
+        .post-content img{
+            text-align: center;
         }
 
 
