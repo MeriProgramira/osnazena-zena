@@ -89,3 +89,7 @@ Route::get('/useful-links', function () {
 Route::get('/quotes', function () {
     return view('quotes');
 })->name('quotes');
+
+Route::get('/us', function () {
+    return view('us');
+})->name('us');
