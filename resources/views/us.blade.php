@@ -20,8 +20,7 @@
     <div class="card-body">
       <blockquote class="blockquote mb-0">
         <img src={{asset("images/meri.png")}}>
-        <p>“Jedna od lekcija s kojom sam odrasla, bila je da uvijek ostanem vjerna sebi i da nikad ne dopustim
-          da me ono što netko drugi kaže odvrati od mojih ciljeva.”</p>
+        <p>“Koje divno iskustvo. Naučila mnogo i upoznala gorgeous cure.”</p>
         <footer class="blockquote-footer"> <cite title="Source Title">Mersiha Mišković</cite></footer>
       </blockquote>
     </div>
