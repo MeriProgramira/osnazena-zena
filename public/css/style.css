@@ -185,12 +185,10 @@ footer h4 {
     #icon-hide1,#icon-hide2,#icon-hide3,#icon-hide4 {
         display: none;
     }
-
-
-
-
-
-
 }
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
 

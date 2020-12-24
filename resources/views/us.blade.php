@@ -1,9 +1,9 @@
 @extends('layouts.links')
 @section('content')
-<head>
+{{-- <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body>
+<body> --}}
     <div class="container">
     <div class="container my-3">
     <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
@@ -14,7 +14,7 @@
           </div>
           </div>
           </div>
-          
+
 <div class="container text-center" data-aos="fade-up" >
   <div class="card my-2">
     <div class="card-body">
@@ -57,20 +57,20 @@
     </div>
   </div>
 
- 
 
- 
 
- 
+
+
+
 </div>
 
     </div>
-    
-</body>
-  
+
+{{-- </body> --}}
+
 <script>
 $('.carousel').carousel({
 interval: 3000
 });
-</script>    
+</script>
 @endsection

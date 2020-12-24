@@ -15,14 +15,14 @@
                         <h4 class="py-3">Kursevi</h4>
                         <img src="images/online-learning.png" alt="online-cours" height="60" >
                         <p class="pt-2">Bilo da se radi o IT, kursu engleskog, njemačkog... imaju za cilj Vaš razvoj </p>
-                        <a href="">saznaj više</a>
+                        <a href="{{ route('us') }}">saznaj više</a>
 
                     </div>
                     <div class="col-md-6 col-sm-12 pb-2">
                         <h4 class="py-3">Radionice</h4>
                         <img src="images/tiles.png" alt="online-cours" height="60" >
                         <p class="pt-2">Art, kuharske....Naručito su popularne kod žena treće životne dobi....  </p>
-                        <a href="">saznaj više</a>
+                        <a href="{{ route('us') }}">saznaj više</a>
                     </div>
                 </div>
 

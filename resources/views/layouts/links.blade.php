@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('fonts/flaticon/font/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
-    <link rel="stylesheet" href=" {{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.css?v=').time()}}">
 </head>
 
 <body>
