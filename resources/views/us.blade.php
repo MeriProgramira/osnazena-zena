@@ -40,7 +40,7 @@
     <div class="card-body">
       <blockquote class="blockquote mb-0">
       <img src={{asset("images/atalija1.jpg")}}>
-        <p>“Svaki početak je težak, ali mi odlučujemo kakav će kraj biti. Ono što je bitno je pravi motiv i ljubav prema onome što radimo, te onda svaki naš san možemo pretvoriti u stvarnost. Velika čast mi je biti dio ovog projekta i najdražeg tima. Sretna sam zbog divne prilike.“</p>
+        <p>“Ono što je bitno je pravi motiv i ljubav prema onome što radimo, te onda svaki naš san možemo pretvoriti u stvarnost. Velika čast mi je biti dio ovog projekta i najdražeg tima.“</p>
         <footer class="blockquote-footer"> <cite title="Source Title">Atalija Smajić</cite></footer>
       </blockquote>
     </div>
