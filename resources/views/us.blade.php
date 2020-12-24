@@ -31,7 +31,7 @@
     <div class="card-body">
       <blockquote class="blockquote mb-0">
       <img src={{asset("images/indira.png")}}>
-        <p>“Introver, zaljubljenik u nebeske visine i paraglajding, živim sa motom "Vjeruj i čini dobro.“ Sretna sam zbog prilike da surađujem sa ovim sjajnim timom, tek kao njihova tiha podrška iz pozadine. Hvala."</p>
+        <p>“Vjeruj i čini dobro.“</p>
         <footer class="blockquote-footer"> <cite title="Source Title">Indira Nuhanović</cite></footer>
       </blockquote>
     </div>
@@ -51,7 +51,7 @@
     <div class="card-body">
       <blockquote class="blockquote mb-0">
       <img src={{asset("images/almedina1.jpg")}}>
-        <p>“Projekat "Osnažena žena" me naučio da svoje snove pretvorim u stvarnost. ”</p>
+        <p>“Projekat "Osnažena žena" me naučio da svoje snove pretvorim u stvarnost. Učinite to sa strašću, ili uopće nemojte pokušavati. ”</p>
         <footer class="blockquote-footer"> <cite title="Source Title">Almedina Brašnjić</cite></footer>
       </blockquote>
     </div>
