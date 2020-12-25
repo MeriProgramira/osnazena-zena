@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
 
-<div class="site-blocks-cover overlay" id="particles-js">
+<div class="site-blocks-cover overlay" >
 
 </div>
 
