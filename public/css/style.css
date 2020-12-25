@@ -78,6 +78,7 @@ a:hover {
     height: calc(83vh);
 }
 
+
 .bg-primary {
     background-color: #f76fd5 !important;
 }
@@ -196,6 +197,7 @@ canvas {
     display: block;
     /* background: rgb(33, 36, 50); */
     position: fixed;
-    z-index: 2000;
+    z-index: -10;
+
 }
 
