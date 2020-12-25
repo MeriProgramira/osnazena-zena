@@ -192,3 +192,10 @@ footer h4 {
     margin-right: 0;
 }
 
+canvas {
+    display: block;
+    /* background: rgb(33, 36, 50); */
+    position: fixed;
+    z-index: 2000;
+}
+
