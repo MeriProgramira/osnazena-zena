@@ -4,7 +4,6 @@
                     $('#cookieModal').modal('show');
                 }
 
-
                 $("#accept").click(function(){
 
                     setCookie("cookies",'Da', 3);

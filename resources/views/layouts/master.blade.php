@@ -19,7 +19,7 @@
 
 <body >
 
-    <div id="particles-js">
+    <div >
 
     </div>
 

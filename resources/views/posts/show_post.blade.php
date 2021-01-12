@@ -87,7 +87,8 @@
             color: rgb(138, 138, 139);
             font-style: italic;
         }
-        .post img {
+
+        img {
             max-width: 100%;
         }
 
@@ -103,6 +104,7 @@
 
         .post-content img{
             text-align: center;
+            max-width: 100%;
         }
 
 
