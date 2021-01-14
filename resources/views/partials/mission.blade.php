@@ -7,7 +7,7 @@
             <div class="card px-3" style="width: 23rem;" data-aos="fade-up">
                 <img src="images/ilearn.jpg" class="img-fluid rounded" alt="i learn">
                 <div class="card-body">
-                  <h2 class="text-primary pb-2">Edukuj se</h5>
+                  <h2 class="text-primary pb-2">Edukuj se</h2>
                   <p class="card-text">Edukacija će ženama omogućiti dodatno obrazovanje, jačanje i osnaživanje
                        njihovih vještina koje će im pomoći pri zapošljavanju i napredovanju u karijeri.</p>
                 </div>
@@ -20,7 +20,7 @@
               <div class="card px-3" style="width: 23rem;" data-aos="fade-up" data-aos-delay="150">
                 <img src="images/together.jpg" class="img-fluid rounded" alt="together">
                 <div class="card-body">
-                  <h2 class="text-primary pb-2">Umreži se</h5>
+                  <h2 class="text-primary pb-2">Umreži se</h2>
                   <p class="card-text">Umrežavanje je ključno sredstvo za uspješne poduzetnice. To vodi ka novim
                        mogućnostima, razvijanju posla,pronalaženju istomišljenica.</p>
                 </div>
@@ -33,7 +33,7 @@
               <div class="card px-3" style="width: 23rem;" data-aos="fade-up" data-aos-delay="300">
                 <img src="images/soccer.jpg" class="img-fluid rounded" alt="soccer">
                 <div class="card-body">
-                  <h2 class="text-primary pb-2">Nastavi pomagati</h5>
+                  <h2 class="text-primary pb-2">Nastavi pomagati</h2>
                   <p class="card-text">Kreiranje grupa za podršku i funkcionalnih ženskih mreža koje prenose
                        znanje jedne drugima, pomažu se uz mentorstvo, permanentan rad i učenje.</p>
                 </div>
