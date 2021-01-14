@@ -188,6 +188,21 @@ footer h4 {
     }
 }
 
+@media screen and (max-width: 600px) {
+    #about-us {
+        padding: 7% 4%;
+        font-size: 0.9;
+        line-height: 1.5;
+    }
+    .empower-title {
+        font-size: 40px;
+    }
+
+    .empower-text {
+        font-size: 26px;
+    }
+}
+
 .row {
     margin-left: 0;
     margin-right: 0;

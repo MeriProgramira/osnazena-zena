@@ -11,7 +11,7 @@
 
 
                     <div class="col-sm-12">
-                  <div class="card bg-dark text-white mb-3 " style="min-height: 25vh">
+                  <div class="card bg-dark text-white mb-3 " style="min-height: 320px">
                     <img src="{{ $post->image }}" class="card-img" id="main-img" alt="post image">
                     <div class="card-img-overlay ">
                       <h5 class="card-title">{{ $post->title }}</h5>
@@ -26,13 +26,13 @@
                 @else
 
                     <div class="col-lg-6 second-blog ">
-                        <div class="row ">
+                        <div class="row " style="min-height: 300px">
                             <div class="col-lg-5">
                                 <img src="{{ $post->image }}" class="card-img-top img-fluid" alt="post image">
                             </div>
                             <div class="col-lg 7">
                                 <h6 class="card-title" id="second-title">{{ $post->title }}</h6>
-                                <p class="card-text ">{!! Str::words($post->content, $limit = 19, $end = '...')   !!} <a href="{{ route('blog', $post) }}" class="read-more">pročitaj više</a></p>
+                                <p class="card-text ">{!! Str::words($post->content, $limit = 17, $end = '...')   !!} <a href="{{ route('blog', $post) }}" class="read-more">pročitaj više</a></p>
                             </div>
                             <hr>
                         </div>

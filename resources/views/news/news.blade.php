@@ -10,7 +10,7 @@
             @foreach ($news as $new)
             @if($loop->first)
 
-                <div class="col-lg-12 bg-dark mb-3 rounded" data-aos="fade-up" style="min-height: 25vh">
+                <div class="col-lg-12 bg-dark mb-3 rounded" data-aos="fade-up" style="min-height: 320px">
                     <div class="overlay mb-2">
                         <img src="{{ $new->image }}" class="card-img-top img-fluid main-img" alt="post image">
                     </div>
@@ -24,7 +24,7 @@
 
                 <div class="col-lg-4 " data-aos="fade-up" data-aos-delay="200">
                     <div class="item mb-2 ">
-                        <div class="overlay " style="min-height: 25vh">
+                        <div class="overlay " style="min-height: 300px">
                             <img src="{{ $new->image }}" class="card-img-top img-fluid" alt="post image">
                         </div>
                         <div class="text-news-second px-2">
