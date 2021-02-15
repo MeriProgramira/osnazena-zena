@@ -19,7 +19,7 @@
                djevojaka u IKT-u 2019. godine, te  uspjesno realizovanih projekata E-Prisustvo,  Explore new borders i Ko kaže da žene ne
                znaju parkirati , ove mlade dame idu dalje. Predvođene sjajnim <span> dr. sc. Almom Šećerbegović, Lejlom Bašić, Adnom Šaković,
                Nermom Jahić, Alminom Kovačević, Lejlom Šarić </span> i ojacane sa 40-tak aktivnih clanica rade na  realizaciji novih projekata i pozivaju
-               mlade,za IT sektor zainteresovane djevojke da im se pridruže. Vise informacija možete pronaći na<a href="https://www.girlthing.ba/ " target="_blank">GirlTHing</a></p>
+               mlade,za IT sektor zainteresovane djevojke da im se pridruže. Vise informacija možete pronaći na <a href="https://www.girlthing.ba/ " target="_blank">GirlTHing</a></p>
 		 <hr>
 
 		<div class="row images-block mb-3">

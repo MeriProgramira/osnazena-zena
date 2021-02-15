@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="shortcut icon" type="image/jpg" href="{{ asset('images/favicon.ico') }}"/>
 
-    <title>Osnazena zena</title>
+    <title>Osnazena zena | Login | Register</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>

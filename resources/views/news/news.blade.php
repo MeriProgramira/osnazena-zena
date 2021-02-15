@@ -85,7 +85,7 @@
             font-weight: 600;
         }
 
-        img {
+        .overlay img {
             max-width: 100%;
             opacity: 0.40;
         }

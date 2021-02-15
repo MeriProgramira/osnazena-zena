@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bs">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="Obrazovanje je jedno od najvažnijih sredstava za osnaživanje žena, a IT sektor pruža velike mogućnosti ">
+    <meta name="keywords" content="osnažena žena, žene u IT, rodna ravnopravnost">
+    <meta name="author" content="GorgeousITGirls">
+
     <link rel="shortcut icon" type="image/jpg" href="{{ asset('images/favicon.ico') }}"/>
+
     <title>Osnažena žena</title>
 
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">

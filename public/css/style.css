@@ -160,6 +160,8 @@ footer h4 {
     color: #f76fd5;
 }
 
+
+
 @media screen and (max-width: 992px) {
     .social-media {
         margin-right: 20px;
@@ -214,6 +216,14 @@ canvas {
     position: fixed;
     z-index: -10;
 
+}
+
+.icon-facebook,.icon-twitter,.icon-linkedin,.icon-instagram {
+    display: none;
+}
+
+.gorgeous {
+    color: #fa94e0;
 }
 
 

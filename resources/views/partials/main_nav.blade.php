@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <p class="mb-0">
-                    <span class="mr-3"><strong class="text-white">Tel:</strong> <a href="tel://#">+387 35
-                            123456</a></span>
+                    <span class="mr-3"><strong class="text-white">Tel:</strong> <a href="tel://#">+387 61
+                            611138</a></span>
                     <span><strong class="text-white">Email:</strong> <a href="#">info@osnazenazena.com</a></span>
                 </p>
             </div>
