@@ -1,7 +1,7 @@
 <section class="section" id="mission">
     <div class="container ">
         <div class="row mb-2">
-            <h1 class="">Šta smo naučile i čemu težimo</h1>
+            <h2 class="">Šta smo naučile i čemu težimo</h2>
         </div>
         <div class="row">
             <div class="card px-3" style="width: 23rem;" data-aos="fade-up">
@@ -23,8 +23,8 @@
                 <div class="card-body">
                   <h2 class="text-primary pb-2">Umreži se</h2>
                   <p class="card-text">Umrežavanje je ključno sredstvo za uspješne poduzetnice i bitan alat za osnaživanje. Ono vodi ka novim
-                       mogućnostima, razvijanju posla, razmjeni iskustava, pronalaženju istomišljenica. U okviru obuke 15 žena koje se ranije nisu nikada ni srele, se upoznalo, zajedno učilo,
-                    surađivalo, pomagalo jedna drugoj. I zavoljelo web development.</p>
+                    mogućnostima, razvijanju posla, razmjeni iskustava, pronalaženju istomišljenica. U okviru obuke 15 žena koje se ranije nisu nikada ni srele,
+                    se upoznalo, zajedno učilo, surađivalo, pomagalo jedna drugoj. I zavoljelo web development.</p>
                 </div>
                 {{-- <ul class="list-unstyled  ul-check primary">
                   <li class="tick-mark">Konferencije</li>

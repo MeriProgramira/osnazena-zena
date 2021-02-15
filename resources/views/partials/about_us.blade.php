@@ -1,7 +1,7 @@
 <section id="about-us" class="section">
     <div class="container pb-3" >
         <div class="row mb-2">
-            <h1 class="">O nama</h1>
+            <h2 class="">O nama</h2>
         </div>
 
         <div class="row ">

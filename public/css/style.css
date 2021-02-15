@@ -94,6 +94,9 @@ a:hover {
 .section h1{
     padding-bottom: 2%;
 }
+#mission h2, #about-us h2 {
+    padding-bottom: 2%;
+}
 
 #about-us p{
     line-height: 1.8;
